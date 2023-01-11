@@ -259,7 +259,7 @@ async def start(client, message):
         chat_id=message.from_user.id,
         file_id=file_id,
         caption=f_caption,
-        reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('Sᴜʙsᴄʀɪʙᴇ', url='httpd://t.me/Technical_Bots') ] ] ),
+        reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('Sᴜʙsᴄʀɪʙᴇ', url='https://t.me/Technical_Bots') ] ] ),
         protect_content=True if pre == 'filep' else False,
         )
                     
