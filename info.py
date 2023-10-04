@@ -32,8 +32,8 @@ AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_chan
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', 'mongodb+srv://Popcorn:Popcorn@cluster0.zotkw95.mongodb.net/?retryWrites=true&w=majority')
-DATABASE_NAME = environ.get('DATABASE_NAME', "Popcorn")
+DATABASE_URI = environ.get('DATABASE_URI', 'mongodb+srv://moviescheckpoints:1@cluster0.rd7llap.mongodb.net/?retryWrites=true&w=majority')
+DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Popcorn')
 
 # Others
@@ -67,7 +67,7 @@ LOG_STR += f"Your current IMDB template is {IMDB_TEMPLATE}"
 # URL Shortener 
 
 URL_SHORTENR_WEBSITE = environ.get('URL_SHORTENR_WEBSITE', 'ziplinker.net')
-URL_SHORTNER_WEBSITE_API = environ.get('URL_SHORTNER_WEBSITE_API', '9c53d31922826c891f8d5d730ef5c495c2bcf36e') # useless don't fill 
+URL_SHORTNER_WEBSITE_API = environ.get('URL_SHORTNER_WEBSITE_API', '5b343a256452228dae2eb40201f9e8a64583357f') # useless don't fill 
 
 # Auto Delete For Group Message (Self Delete) 
 SELF_DELETE_SECONDS = int(environ.get('SELF_DELETE_SECONDS', 3600))
